@@ -2,6 +2,9 @@
 Crea una venata basica sin ningun componente agregado, es decir una ventana vacia.  
 Documentacion muy rapido sabre el codigo de estas clases. :D  
   
+  ______  
+    
+  
   
 ## Clase View.
 Hereda de JFrame lo que nos permite crear ventanas tradicionales.   
