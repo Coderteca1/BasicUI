@@ -6,7 +6,7 @@ Documentacion muy rapido sabre el codigo de estas clases. :D
 ## Clase View.
 Hereda de JFrame lo que nos permite crear ventanas tradicionales.   
 ### Constructor.  
-View()  
+__View()__  
  Inicializa la ventana con la llama al constructor de la super clase y ejecutando el metodo __initProperties()__
 ### Metodos.  
 __initProperties()__  
