@@ -46,4 +46,27 @@ public class Constants {
 
 	};
 
+	public static Image scaledContent(Image image, int wComponent) {
+		int widthContentIcon = wComponent;
+		double porcent = 0.0;
+		double imageWidth = image.getWidth(null);
+		double imageHeight = image.getHeight(null);
+		if (image.getWidth(null) < wComponent) {
+			return image;
+		}
+		if (imageWidth > imageHeight) {
+			// La imagen es mas ancha que alta
+			// Anchura > altura
+			porcent = widthContentIcon * 100 / imageWidth;
+		} else {
+			porcent = widthContentIcon * 100 / imageHeight;
+		}
+		porcent = porcent / 100;
+		int width = (int) (porcent * imageWidth);
+		int height = (int) (porcent * imageHeight);
+
+		return image.getScaledInstance(width, height, Image.SCALE_FAST);
+	}
+	
+	
 }
